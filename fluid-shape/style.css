@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/* ====================
+  全体共通
+==================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #111;
+    font-size: 16px;
+    min-width: 1200px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ====================
+  header
+==================== */
+
+/* ヘッダー全体 */
+header {
+    height: 596px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: url(img/header.svg) no-repeat top right/contain;
+}
+
+/* ロゴ/ナビ */
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px 0;
+}
+
+/* ロゴ */
+.links .logo {
+    font-size: 48px;
+}
+
+/* ナビ */
+.links nav {
+    display: flex;
+    gap: 50px;
+}
+
+.links nav a {
+    color: #fff;
+}
+
+/* メインコピー */
+.main-copy {
+    width: 100%;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin: 1em 0 0;
+    letter-spacing: .1em;
+}
+
+/* サブコピー */
+.sub-copy {
+    font-size: 32px;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+}
+
+/* ====================
+  main共通
+==================== */
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin: 120px auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 1em;
+}
+
+/* テキストエリア共通 */
+.text-area p {
+    font-size: 20px;
+}
+
+/* ====================
+  .featureセクション
+==================== */
+
+/* セクション全体 */
+.feature {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* テキストエリア */
+.feature .text-area {
+    margin-top: 100px;
+}
+
+/* 特徴3点 */
+.features {
+    width: 680px;
+    height: 600px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+/* 各特長共通 */
+.features div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 360px;
+}
+
+/* 特徴 中央 */
+.center {
+    background: url(img/center.svg) center/contain no-repeat;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+/* 特徴 左 */
+.left {
+    background: url(img/left.svg) center/contain no-repeat;
+    left: 0;
+    bottom: 0;
+}
+
+/* 特徴 右 */
+.right {
+    background: url(img/right.svg) center/contain no-repeat;
+    right: 0;
+    bottom: 0;
+}
+
+/* 特徴の見出し */
+.features h3 {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+/* ====================
+  .new-ereaセクション
+==================== */
+
+/* セクション全体 */
+.new-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* テキストエリア */
+.new-area .text-area {
+    width: 44%;
+}
+
+/* 画像エリア */
+.new-area img {
+    width: 50%;
+    height: auto;
+}
+
+/* ====================
+  footer
+==================== */
+
+footer {
+    height: 300px;
+    background: url(img/footer.svg) top center /cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: #fff;
+    margin-top: 40px;
+}
